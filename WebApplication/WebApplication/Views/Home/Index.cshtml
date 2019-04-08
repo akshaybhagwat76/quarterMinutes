@@ -1,0 +1,7 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+@Html.DropDownList("pick_up_time", ViewData["lst"] as List<SelectListItem> ,htmlAttributes: new { @id = "ddl_picktime", style = "height: auto;max - height: 100px;overflow - x: hidden;color:mediumvioletred ", @class = "form-control ddl", @placeholder = "" })
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/pickup.js"></script>
